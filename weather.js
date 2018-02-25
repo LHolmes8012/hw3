@@ -10,7 +10,7 @@ let getWeather = function(info) {
   console.log(info)
   let latitude = info.coords.latitude.toFixed(4);
   let longitude = info.coords.longitude.toFixed(4);
-  let apiKey = 'c12fc648d09e3dd15d018e0aacdd05b1'; // REPLACE THIS VALUE with your own key.
+  let apiKey = 'c12fc648d09e3dd15d018e0aacdd05b1'; // Replaced with my own api key.
 
   let weatherServiceURL = 'https://api.openweathermap.org/data/2.5/weather?'
   weatherServiceURL += 'lat=' + latitude
@@ -37,6 +37,3 @@ link.on("click", updateWeather);
 
 let convertToJSON = function(rawData) { return rawData.json(); }
 let displayError = function(error) { console.debug(error); }
-
-//let e = jQuery("p")
-//e.html("See ya!")
